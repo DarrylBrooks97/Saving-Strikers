@@ -1,0 +1,175 @@
+/*
+Group Members: Marthe Edme , Darryl Brooks
+File Name: styles.css
+Current Date: 10/03/2020
+*/
+/*
+    The importance of the CSS Reset is to make sure you are working on a webpage that doesn't already have any styling.
+    Selectors: body, header, nav, main, footer, img, h1
+*/
+/*CSS Reset*/
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Home Page Styling*/
+.home-picture {
+  max-width: 100%;
+  width: 40%;
+  height: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#welcome {
+  text-align: center;
+}
+
+#welcome-text {
+  padding-bottom: 2%;
+}
+/* Style rule for images */
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Style rules for header content */
+header {
+  text-align: center;
+  font-size: 1.5em;
+  color: cadetblue;
+}
+
+header h1 {
+  font-style: italic;
+  font-family: "Piazzolla", serif;
+}
+
+/* Style rules for navigation area */
+nav {
+  background-color: darkcyan;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 2em;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 1em;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: red;
+}
+
+/* Style rules for main content */
+main {
+  padding: 3%;
+  background-color: #e8e8e8;
+  overflow: auto;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+main p {
+  font-size: 1.25em;
+  font-family: "Taviraj", serif;
+  border-radius: 3px 5px 2px 4px;
+}
+main div img {
+  width: 500px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  height: 50%;
+  width: 70%;
+  max-width: 100%;
+}
+.corner{
+  border-radius: 10px;
+  height: 300px;
+  width: 500px;
+}
+/* Style rules for footer content */
+footer {
+  text-align: center;
+  clear: left;
+  padding: 1% 0% 1% 0%;
+}
+
+footer a {
+  color: darkcyan;
+  text-decoration: none;
+}
+
+/* Mobile Design */
+@media (max-width: 850px) {
+  nav li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 550px), print{
+  /*Tablet Viewport: Show tab-desk class, hide mobile class*/
+  .tab-desk{
+    display: block;
+  }
+  .mobile{
+    display: none;
+  }
+  /*Tablet Viewport: Style rules for nav area*/
+  nav li{
+    border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
+  }
+  nav li a{
+    padding: 0.5em;
+  }
+}
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width: 1000px), print{
+  /*Desktop Viewport: Style rules for nav area*/
+  nav li{
+    font-size: 1.5em;
+  }
+  nav li a{
+    padding: 0.5em 1.5em;
+  }
+  nav li a:hover{
+    color: #008080;
+    background-color:#C0C0C0;
+  }
+  /*Desktop Viewport: Style rules for main content*/
+  #info ul{
+    margin-left: 5%;
+  }
+}
+/*Media Query for Large Desktop Viewports*/
+@media screen and (min-width: 1280px){
+  body{
+    background:linear-gradient(#C0C0C0, #008080)
+  }

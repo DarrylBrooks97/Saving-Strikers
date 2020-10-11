@@ -1,42 +1,57 @@
+<!DOCTYPE html>
 <!-- 
     Group Members: Marthe Edme , Darryl Brooks
-    File Name: template.html
-    Current Date: 9/10/2020
+    File Name: index.html
+    Current Date: 10/03/2020
 -->
-
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Home Page</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="utf-8"
+    />
+    <title>Saving Strikers</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Piazzolla&family=Taviraj:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="student/css/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header><h1>Saving Strikers</h1></header>
+    <header>
+      <h1>Home Page</h1>
+    </header>
     <nav>
-      <p>&#9672; Home &#9672;</p>
-      <p>&#9672;Finances&#9672;</p>
-      <p>&#9672;Before you Go&#9672;</p>
-      <p>&#9672;FAQs&#9672;</p>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="finances.html">Finances</a></li>
+        <li><a href="beforeyougo.html">Before you Go</a></li>
+        <li><a href="faqs.html">FAQs</a></li>
+      </ul>
     </nav>
-    <!-- The main's purpose is to hold all of the main information about the webpage  -->
     <main>
-      <p>
-        Welcome to Saving Strikers. Our mission is to minimize the cost of
-        expenses of fellow college students while living off campus by
-        themselves.
-      </p>
-      <p>
-        We will provide information on how to survive on their own when it comes
-        to financial needs.
-      </p>
-      <p>
-        We will answer any questions in the FAQs section and if we don't you are
-        welcome to write it down and we will answer it as soon as we can.
-      </p>
+      <div id="welcome">
+        <h1 id="welcome-text">Welcome to Saving Strikers</h1>
+        <img src="student/images/FAMUMoney.jpg" alt="Saving" />
+        <p>
+          Our mission is to minimize the cost of expenses of fellow college
+          students while living off campus by themselves.
+        </p>
+        <p>
+          We will provide information on how to survive on their own when it
+          comes to financial needs.
+        </p>
+        <p>
+          We will answer any questions in the FAQs section and if we don't, you
+          are welcome to write it down and we will answer it as soon as we can.
+        </p>
+      </div>
     </main>
     <footer>
-      Need more information? Email us at SavingStrikers@gmail.com or Call
-      800-000-HELP
+      Need more information? Email us at
+      <a href="mailto:SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or
+      Call 800-000-MORE
     </footer>
   </body>
 </html>
