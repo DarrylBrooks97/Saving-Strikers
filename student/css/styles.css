@@ -1,7 +1,7 @@
 /*
 Group Members: Marthe Edme , Darryl Brooks
 File Name: styles.css
-Current Date: 10/03/2020
+Current Date: 10/11/2020
 */
 /*
     The importance of the CSS Reset is to make sure you are working on a webpage that doesn't already have any styling.
@@ -19,7 +19,9 @@ h1 {
   padding: 0;
   border: 0;
 }
-
+body{
+  background: linear-gradient(#e9ecef,#ced4da);
+}
 /* Home Page Styling*/
 .home-picture {
   max-width: 100%;
@@ -86,7 +88,6 @@ nav li a:hover {
 /* Style rules for main content */
 main {
   padding: 3%;
-  background-color: #e8e8e8;
   overflow: auto;
   font-family: Verdana, Arial, sans-serif;
 }
@@ -95,6 +96,7 @@ main p {
   font-size: 1.25em;
   font-family: "Taviraj", serif;
   border-radius: 3px 5px 2px 4px;
+  /* max-width: 1024px; */
 }
 main div img {
   width: 500px;
@@ -106,6 +108,26 @@ img {
   height: 50%;
   width: 70%;
   max-width: 100%;
+}
+.column{
+  display: flex;
+}
+.column div{
+  flex: 50%;
+}
+.column ul{
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+.column li{
+  margin: auto;
+}
+#faq{
+  text-align: center;
 }
 .corner{
   border-radius: 10px;
@@ -150,6 +172,12 @@ footer a {
     padding: 0.5em;
   }
 }
+/* Media Query for Mobile Device*/
+@media screen and (max-width:800px),print{
+  .column{
+  display: block;
+}
+}
 /*Media Query for Desktop Viewport*/
 @media screen and (min-width: 1000px), print{
   /*Desktop Viewport: Style rules for nav area*/
@@ -159,17 +187,8 @@ footer a {
   nav li a{
     padding: 0.5em 1.5em;
   }
-  nav li a:hover{
-    color: #008080;
-    background-color:#C0C0C0;
-  }
   /*Desktop Viewport: Style rules for main content*/
   #info ul{
     margin-left: 5%;
   }
 }
-/*Media Query for Large Desktop Viewports*/
-@media screen and (min-width: 1280px){
-  body{
-    background:linear-gradient(#C0C0C0, #008080)
-  }
