@@ -8,13 +8,26 @@ Current Date: 10/11/2020
     Selectors: body, header, nav, main, footer, img, h1
 */
 /*CSS Reset*/
-body, header, nav, main, footer, img, h1, ul, article,section, aside, figure, figcaption,iframe{
+body,
+header,
+nav,
+main,
+footer,
+img,
+h1,
+ul,
+article,
+section,
+aside,
+figure,
+figcaption,
+iframe {
   margin: 0;
   padding: 0;
   border: 0;
 }
-body{
-  background: linear-gradient(#e9ecef,#ced4da);
+body {
+  background: linear-gradient(#e9ecef, #ced4da);
 }
 /* Home Page Styling*/
 .home-picture {
@@ -24,10 +37,10 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-a{
+a {
   text-decoration: none;
 }
-iframe{
+iframe {
   padding: 10px;
   border: 3px solid red;
 }
@@ -49,13 +62,13 @@ header {
   font-size: 1.5em;
   color: cadetblue;
 }
-li p{
+li p {
   width: 70%;
 }
 header h1 {
   font-style: italic;
   font-family: "Piazzolla", serif;
-  text-shadow: 33px 3px 4px #B5B3CD;
+  text-shadow: 33px 3px 4px #b5b3cd;
 }
 
 /* Style rules for navigation area */
@@ -101,12 +114,12 @@ main p {
   font-family: "Taviraj", serif;
   border-radius: 3px 5px 2px 4px;
 }
-aside{
+aside {
   padding: 5px;
   margin-bottom: 5%;
   border: 2px solid green;
   border-radius: 5px;
-  background-color: #B5B4BB;
+  background-color: #b5b4bb;
   text-align: center;
 }
 /* Other images may need this*/
@@ -114,16 +127,16 @@ section img {
   height: 50%;
   width: 50%;
   max-width: 100%;
-  box-shadow: 12px 10px 0px #A5B4BB;
+  box-shadow: 12px 10px 0px #a5b4bb;
 }
-.column{
+.column {
   display: grid;
   grid-gap: 10px;
 }
-.column div{
+.column div {
   grid-row: 1 / span 2;
 }
-.column ul{
+.column ul {
   list-style: none;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -131,37 +144,37 @@ section img {
   margin-inline-end: 0px;
   padding-inline-start: 0;
 }
-.column li{
+.column li {
   margin: auto;
 }
-.corner{
+.corner {
   border-radius: 10px;
   height: 300px;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
-.faq-image img{
+.faq-image img {
   margin-left: auto;
   margin-right: auto;
 }
-figure{
+figure {
   width: 33%;
-  height: 50%
+  height: 50%;
 }
-figure a{
+figure a {
   text-decoration: none;
 }
-figure a:hover{
-  color: rgb(205,92,92);
+figure a:hover {
+  color: rgb(205, 92, 92);
 }
-figure img{
+figure img {
   margin-right: auto;
   margin-bottom: auto;
   display: block;
   border-radius: 10px;
 }
-figcaption{
+figcaption {
   margin-top: 3%;
   width: auto;
   height: auto;
@@ -178,99 +191,90 @@ footer a {
   text-decoration: none;
 }
 
-.creators-div{
+.creators-div {
   display: grid;
   grid-gap: 0px;
 }
 
-.creators-div figure{
+.creators-div figure {
   grid-row: 1 / span 3;
 }
 
-#location{
+#location {
   text-align: center;
 }
 /* Darryl's Image Do not touch*/
-.darryl-image{
+.darryl-image {
   height: 100%;
 }
 
 /*Media Query for Tablet Viewport*/
-@media screen and (min-width: 550px), print{
-  .grid{
+@media screen and (min-width: 550px), print {
+  .grid {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 15px;
   }
-  aside{
+  aside {
     font-weight: bold;
   }
-  figcaption{
-    font-size: ;
-  }
   /*Tablet Viewport: Show tab-desk class, hide mobile class*/
-  .tab-desk{
+  .tab-desk {
     display: block;
   }
-  .mobile{
+  .mobile {
     display: none;
   }
   /*Tablet Viewport: Style rules for nav area*/
-  nav li{
+  nav li {
     border-top: none;
     display: inline-block;
     font-size: 1.25em;
   }
-  nav li a{
+  nav li a {
     padding: 0.5em;
   }
 }
 /* Media Query for Mobile Device*/
-@media screen and (max-width:800px),print{
+@media screen and (max-width: 800px), print {
   nav li {
     display: flex;
     flex-direction: column;
   }
-  nav{
+  nav {
     display: block;
   }
-  .creators-div{
-  display: block;
-  margin-top: 15px;
-  margin-bottom: 15px;
-}
-.creators-div figure{
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-  figcaption{
-    font-size:
+  .creators-div {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .creators-div figure {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   /* .column{
   display: block;
 } */
 }
 /*Media Query for Desktop Viewport*/
-@media screen and (min-width: 1000px), print{
-  .grid{
+@media screen and (min-width: 1000px), print {
+  .grid {
     grid-template-columns: auto auto auto;
   }
-  aside{
-    grid-column: 1 /span 4 ;
-  }
-  figcaption{
-    font-size: ;
+  aside {
+    grid-column: 1 / span 4;
   }
   /*Desktop Viewport: Style rules for nav area*/
-  nav li{
+  nav li {
     font-size: 1.5em;
   }
-  nav li a{
+  nav li a {
     padding: 0.5em 1.5em;
   }
   /*Desktop Viewport: Style rules for main content*/
-  #info ul{
+  #info ul {
     margin-left: 5%;
   }
 }
