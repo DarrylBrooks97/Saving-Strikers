@@ -8,13 +8,7 @@ Current Date: 10/11/2020
     Selectors: body, header, nav, main, footer, img, h1
 */
 /*CSS Reset*/
-body,
-header,
-nav,
-main,
-footer,
-img,
-h1 {
+body, header, nav, main, footer, img, h1, ul, article,section, aside, figure, figcaption,iframe{
   margin: 0;
   padding: 0;
   border: 0;
@@ -30,7 +24,13 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-
+a{
+  text-decoration: none;
+}
+iframe{
+  padding: 10px;
+  border: 3px solid red;
+}
 #welcome {
   text-align: center;
 }
@@ -49,10 +49,13 @@ header {
   font-size: 1.5em;
   color: cadetblue;
 }
-
+li p{
+  width: 70%;
+}
 header h1 {
   font-style: italic;
   font-family: "Piazzolla", serif;
+  text-shadow: 33px 3px 4px #B5B3CD;
 }
 
 /* Style rules for navigation area */
@@ -90,30 +93,35 @@ main {
   padding: 3%;
   overflow: auto;
   font-family: Verdana, Arial, sans-serif;
+  /* text-align: center; */
 }
 
 main p {
   font-size: 1.25em;
   font-family: "Taviraj", serif;
   border-radius: 3px 5px 2px 4px;
-  /* max-width: 1024px; */
 }
-main div img {
-  width: 500px;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
+aside{
+  padding: 5px;
+  margin-bottom: 5%;
+  border: 2px solid green;
+  border-radius: 5px;
+  background-color: #B5B4BB;
+  text-align: center;
 }
-img {
+/* Other images may need this*/
+section img {
   height: 50%;
-  width: 70%;
+  width: 50%;
   max-width: 100%;
+  box-shadow: 12px 10px 0px #A5B4BB;
 }
 .column{
-  display: flex;
+  display: grid;
+  grid-gap: 10px;
 }
 .column div{
-  flex: 50%;
+  grid-row: 1 / span 2;
 }
 .column ul{
   list-style: none;
@@ -126,13 +134,38 @@ img {
 .column li{
   margin: auto;
 }
-#faq{
-  text-align: center;
-}
 .corner{
   border-radius: 10px;
   height: 300px;
   width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.faq-image img{
+  margin-left: auto;
+  margin-right: auto;
+}
+figure{
+  width: 33%;
+  height: 50%
+}
+figure a{
+  text-decoration: none;
+}
+figure a:hover{
+  color: rgb(205,92,92);
+}
+figure img{
+  margin-right: auto;
+  margin-bottom: auto;
+  display: block;
+  border-radius: 10px;
+}
+figcaption{
+  margin-top: 3%;
+  width: auto;
+  height: auto;
+  /* text-align: center; */
 }
 /* Style rules for footer content */
 footer {
@@ -140,21 +173,41 @@ footer {
   clear: left;
   padding: 1% 0% 1% 0%;
 }
-
 footer a {
   color: darkcyan;
   text-decoration: none;
 }
 
-/* Mobile Design */
-@media (max-width: 850px) {
-  nav li {
-    display: flex;
-    flex-direction: column;
-  }
+.creators-div{
+  display: grid;
+  grid-gap: 0px;
 }
+
+.creators-div figure{
+  grid-row: 1 / span 3;
+}
+
+#location{
+  text-align: center;
+}
+/* Darryl's Image Do not touch*/
+.darryl-image{
+  height: 100%;
+}
+
 /*Media Query for Tablet Viewport*/
 @media screen and (min-width: 550px), print{
+  .grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+  }
+  aside{
+    font-weight: bold;
+  }
+  figcaption{
+    font-size: ;
+  }
   /*Tablet Viewport: Show tab-desk class, hide mobile class*/
   .tab-desk{
     display: block;
@@ -174,12 +227,41 @@ footer a {
 }
 /* Media Query for Mobile Device*/
 @media screen and (max-width:800px),print{
-  .column{
+  nav li {
+    display: flex;
+    flex-direction: column;
+  }
+  nav{
+    display: block;
+  }
+  .creators-div{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.creators-div figure{
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
+  figcaption{
+    font-size:
+  }
+  /* .column{
+  display: block;
+} */
 }
 /*Media Query for Desktop Viewport*/
 @media screen and (min-width: 1000px), print{
+  .grid{
+    grid-template-columns: auto auto auto;
+  }
+  aside{
+    grid-column: 1 /span 4 ;
+  }
+  figcaption{
+    font-size: ;
+  }
   /*Desktop Viewport: Style rules for nav area*/
   nav li{
     font-size: 1.5em;
