@@ -60,6 +60,26 @@
         <h2>Comment Section</h2>
         <h3>Tell us how helpful we were</h3>
         <!--Let them be able to write down comments-->
+        <form class="form-grid">
+          <fieldset>
+            <legend>
+              Contact Information
+            </legend>
+            <label for="types">Type of Comment:</label>
+  <select id="commentType" name="commentType">
+    <option value="Issue">Issue</option>
+    <option value="add">Website Modification</option>
+    <option value="General">General</option>
+  </select>
+            <label for="fName">First Name:</label>  <input type="text" name="fName" id="fName"required >
+            <label for="lName">Last Name:</label>  <input type="text" name="lName" id="lName" required >
+            <label for="email">Email:</label>  <input type="email" name="email" id="email" required >
+            <label for="phone">Phone:</label>  <input type="tel" id="phone" name="phone">
+            <label for="comments">What comments do you have for us?</label>
+  <textarea name="comments" id="comments" rows="5" cols="35" required ></textarea>
+          </fieldset>
+          <input type="submit" id="submit" id="submit" value="Submit" class="btn">
+        </form>
         <h3>Previous Comments</h3>
         <!--This section would let the readers read the previous student's comments about what they think and how helpful they found our website-->
       </section>

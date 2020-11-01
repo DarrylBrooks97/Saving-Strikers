@@ -1,7 +1,7 @@
 /*
 Group Members: Marthe Edme , Darryl Brooks
 File Name: styles.css
-Current Date: 10/11/2020
+Current Date: 10/31/2020
 */
 /*
     The importance of the CSS Reset is to make sure you are working on a webpage that doesn't already have any styling.
@@ -180,6 +180,27 @@ figcaption {
   height: auto;
   /* text-align: center; */
 }
+/* Desktop Viewport: Style rules for form elements */
+fieldset,input,textarea{
+  margin-bottom: 2%;
+}
+form{
+  width: auto;
+}
+form #submit{
+  margin: 0 auto;
+  display: block;
+  padding: 2%;
+  background-color: darkcyan;
+  color: #f6eee4;
+  font-size: 1.25em;
+  border-radius: 10px;
+}
+.form-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
 /* Style rules for footer content */
 footer {
   text-align: center;
@@ -190,7 +211,10 @@ footer a {
   color: darkcyan;
   text-decoration: none;
 }
-
+label{
+  display: block;
+  padding-top: 2%;
+}
 .creators-div {
   display: grid;
   grid-gap: 0px;
@@ -203,11 +227,31 @@ footer a {
 #location {
   text-align: center;
 }
+/* Table Styles*/
+  table{
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  th,td{
+    border: 1px solid #2a1f14;
+    padding: 1%;
+  }
+  th{
+    background-color: #2a1f14;
+    color: white;
+    font-size: 1.15em;
+  }
+  tr:nth-child(odd){
+    background-color: darkcyan;
+  }
 /* Darryl's Image Do not touch*/
 .darryl-image {
   height: 100%;
 }
-
+.btn{
+    grid-column: 1 / span 2;
+  }
 /*Media Query for Tablet Viewport*/
 @media screen and (min-width: 550px), print {
   .grid {
@@ -233,6 +277,10 @@ footer a {
   }
   nav li a {
     padding: 0.5em;
+  }
+   form{
+    width: 70%;
+    margin: 0 auto;
   }
 }
 /* Media Query for Mobile Device*/
@@ -276,5 +324,8 @@ footer a {
   /*Desktop Viewport: Style rules for main content*/
   #info ul {
     margin-left: 5%;
+  }
+    form{
+    width: auto;
   }
 }
