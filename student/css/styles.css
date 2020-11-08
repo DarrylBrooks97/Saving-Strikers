@@ -56,6 +56,14 @@ iframe {
 	width: 30%;
 	height: 100%;
 }
+#contact-div {
+	display: flex;
+	padding: 2em;
+	height: 10%;
+}
+#contact-content {
+	width: 50%;
+}
 #welcome-text {
 	padding-bottom: 2%;
 }
