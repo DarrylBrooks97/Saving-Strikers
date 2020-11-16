@@ -17,6 +17,7 @@
 			sizes="32x32"
 			href="images/favicon-32.png"
 		/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link
 			rel="apple-touch-icon"
 			sizes="180x180"
@@ -44,7 +45,10 @@
 		<header>
 			<h1>Contact Us</h1>
 		</header>
-		<nav>
+		<div class="hamburger">
+      <a href="javascript:void(0);" onclick="openMenu()"><i class="fa fa-bars" ></i></a>
+    </div>
+		<nav id="nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="finances.html">Finances</a></li>
@@ -53,6 +57,7 @@
 				<li><a href="contact-us.html">Contact Us</a></li>
 			</ul>
 		</nav>
+    </div>
 		<!-- The main's purpose is to letprevious reader to share their opinion about the website. They will contact-us.html on how helpful the website was for them and how it help thm adjust to their new situation and such  -->
 		<main>
 			<section>
@@ -102,7 +107,7 @@
 									><img
 										src="./images/darryl.jpg"
 										alt="darryl"
-										style="height: 50%; width: 60%; margin: 0 auto"
+										style="height: 50%; width: 60%; margin: 0 auto" id="contact-img"
 									/>
 								</a>
 								<div style="width: 50%; text-align: center; margin: auto">
@@ -131,7 +136,7 @@
 									><img
 										src="./images/donovan.jpg"
 										alt="donovan"
-										style="height: 70%; width: 60%; margin: 0 auto"
+										style="height: 70%; width: 60%; margin: 0 auto" id="contact-img"
 									/>
 								</a>
 								<div style="width: 50%; text-align: center; margin: auto">
@@ -201,5 +206,7 @@
 			<a href="SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or Call
 			800-000-MORE
 		</footer>
+    <button class="darkmode-btn" onclick="darkMode()" id="dark">Turn Dark Mode On</button>
+    <script src="scripts/script.js"></script>
 	</body>
 </html>

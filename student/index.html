@@ -2,7 +2,7 @@
 <!-- 
 		Group Members: Marthe Edme , Darryl Brooks
 		File Name: index.html
-		Current Date: 10/03/2020
+		Current Date: 11/15/2020
 -->
 <html lang="en">
 	<head>
@@ -23,7 +23,7 @@
 			href="images/apple-touch-icon.png"
 		/>
 		<link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1"
@@ -43,9 +43,12 @@
 	</head>
 	<body>
 		<header>
-			<h1>Home Page</h1>
+			<h1 >Home Page</h1>
 		</header>
-		<nav>
+    <div class="hamburger">
+      <a href="javascript:void(0);"   onclick="openMenu()"><i class="fa fa-bars" ></i></a>
+    </div>
+		<nav id="nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="finances.html">Finances</a></li>
@@ -54,12 +57,13 @@
 				<li><a href="contact-us.html">Contact Us</a></li>
 			</ul>
 		</nav>
+    </div>
 		<main>
 			<div id="welcome">
 				<h1 id="welcome-text">Welcome to Saving Strikers</h1>
 				<section>
 					<img src="images/FAMUMoney.jpg" class="corner" alt="Saving" />
-					<cite>by Florida Agriculture Mechanical University</cite>
+					<cite>by Florida Agricultural & Mechanical University</cite>
 				</section>
 				<p>
 					Our mission is to minimize the cost of expenses of fellow college students
@@ -149,10 +153,13 @@
 				</div>
 			</div>
 		</main>
+    
 		<footer>
 			Need more information? Email us at
 			<a href="mailto:SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or
 			Call 800-000-MORE
 		</footer>
+    <button class="darkmode-btn" onclick="darkMode()" id="dark">Turn Dark Mode On</button>
+    <script src="scripts/script.js"></script>
 	</body>
 </html>

@@ -27,7 +27,14 @@ iframe {
 	border: 0;
 }
 body {
-	background: linear-gradient(#e9ecef, #ced4da);
+  background: linear-gradient(#e9ecef, #ced4da);
+  transition: background 1s linear;
+}
+body.dark{
+  background: #67697C;
+}
+.text-darkmode{
+  color: white;
 }
 /* Home Page Styling*/
 .home-picture {
@@ -52,9 +59,20 @@ iframe {
 #welcome {
 	text-align: center;
 }
+.darkmode-btn{
+  position:fixed;
+  bottom:50px;
+  right:50px;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+}
 #contact-img {
 	width: 30%;
 	height: 100%;
+}
+#contact-img:hover{
+  animation: zoom 1s forwards;
 }
 #contact-div {
 	display: flex;
@@ -76,6 +94,17 @@ img {
 	height: 100%;
 	margin: 0 auto;
 }
+#home-img:hover{
+  animation: zoom 1s forwards;
+}
+@keyframes zoom{
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1.0);
+  }
+}
 /* Style rules for header content */
 header {
 	text-align: center;
@@ -90,8 +119,10 @@ header h1 {
 	font-family: "Piazzolla", serif;
 	text-shadow: 33px 3px 4px #b5b3cd;
 }
-
 /* Style rules for navigation area */
+.hamburger{
+  display: none;
+}
 nav {
 	background-color: darkcyan;
 	display: flex;
@@ -283,7 +314,7 @@ tr:nth-child(odd) {
 .darryl-image {
 	height: 100%;
 }
-/*Media Query for Tablet Viewport*/
+/*Media Query for Mobile Viewport*/
 @media screen and (min-width: 550px), print {
 	.grid {
 		display: grid;
@@ -301,6 +332,7 @@ tr:nth-child(odd) {
 		display: none;
 	}
 	/*Tablet Viewport: Style rules for nav area*/
+  
 	nav li {
 		border-top: none;
 		display: inline-block;
@@ -314,15 +346,18 @@ tr:nth-child(odd) {
 		margin: 0 auto;
 	}
 }
-/* Media Query for Mobile Device*/
+/* Media Query for Tablet Device*/
 @media screen and (max-width: 800px), print {
+  .hamburger{
+  display: block;
+}
 	nav li {
-		display: flex;
+    display: flex;
 		flex-direction: column;
 	}
-	nav {
-		display: block;
-	}
+  #nav{
+    display: none;
+  }
 	.creators-div {
 		display: block;
 		margin-top: 15px;
@@ -333,9 +368,9 @@ tr:nth-child(odd) {
 		margin-right: auto;
 		display: block;
 	}
-	/* .column{
-  display: block;
-} */
+	@keyframes apperance{
+
+  }
 }
 /*Media Query for Desktop Viewport*/
 @media screen and (min-width: 1000px), print {
@@ -345,6 +380,9 @@ tr:nth-child(odd) {
 	aside {
 		grid-column: 1 / span 4;
 	}
+  nav{
+    display: block;
+  }
 	/*Desktop Viewport: Style rules for nav area*/
 	nav li {
 		font-size: 1.5em;
