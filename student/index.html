@@ -6,6 +6,7 @@
 -->
 <html lang="en">
 	<head>
+    <meta name="description" content="Home page">
 		<link
 			href="https://fonts.googleapis.com/css?family=Emblema+One|Lora&display=swap"
 			rel="stylesheet"
@@ -34,7 +35,7 @@
 			href="https://fonts.googleapis.com/css2?family=Piazzolla&family=Taviraj:wght@300&display=swap"
 			rel="stylesheet"
 		/>
-		<link href="css/styles.css" rel="stylesheet" />
+		<link href="css/styles-min.css" rel="stylesheet" />
 		<link
 			rel="icon"
 			type="image/png"
@@ -59,6 +60,12 @@
 		</nav>
     </div>
 		<main>
+      <div id="skip">
+        <p>Skip to</p>
+        <ul>
+          <li><a href="#devs">Developers</a></li>
+        </ul>
+      </div>
 			<div id="welcome">
 				<h1 id="welcome-text">Welcome to Saving Strikers</h1>
 				<section>
@@ -78,9 +85,9 @@
 					welcome to write it down and we will answer it as soon as we can.
 				</p>
 			</div>
-			<aside><h2>Saving Strikers Developers</h2></aside>
+			<aside id="devs"><h2>Saving Strikers Developers</h2></aside>
 			<div>
-				<div class="creators-div">
+				<div class="creators-div" >
 					<figure>
 						<div style="height: 60%">
 							<img src="images/marthe.jpg" alt="Marthe Edme" id="home-img" />
@@ -155,10 +162,18 @@
 		</main>
     
 		<footer>
-			Need more information? Email us at
-			<a href="mailto:SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or
-			Call 800-000-MORE
-		</footer>
+        Need more information? Email us at
+         <a href="mailto:SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or
+         Call 800-000-MORE
+      <div class="copyright">
+      <p>&copy; Copyright 2021. All Rights Reserved.</p>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/FAMU1887/" target="_blank"><img src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/facebook-logo.png?raw=true" alt="Facebook logo"></a>
+        <a href="https://twitter.com/FAMU_1887?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/twitter-logo.png?raw=true" alt="Twitter Logo"></a>
+      </div>
+      <a href="mailto:lessons@strikeachord.net"></a>
+    </footer>
     <button class="darkmode-btn" onclick="darkMode()" id="dark">Turn Dark Mode On</button>
     <script src="scripts/script.js"></script>
 	</body>

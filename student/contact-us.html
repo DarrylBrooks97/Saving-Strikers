@@ -6,6 +6,12 @@
 -->
 <html lang="en">
 	<head>
+    <meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+			charset="utf-8"
+		/>
+    <meta name="description" content="Students will know how to contact Saving Strikers">
 		<link
 			href="https://fonts.googleapis.com/css?family=Emblema+One|Lora&display=swap"
 			rel="stylesheet"
@@ -24,12 +30,8 @@
 			href="images/apple-touch-icon.png"
 		/>
 		<link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1"
-			charset="utf-8"
-		/>
-		<title>Comment Selection</title>
+		
+		<title>Contact Page</title>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Piazzolla&family=Taviraj:wght@300&display=swap"
 			rel="stylesheet"
@@ -39,7 +41,7 @@
 			type="image/png"
 			href="https://image.flaticon.com/icons/png/128/616/616487.png"
 		/>
-		<link href="css/styles.css" rel="stylesheet" />
+		<link href="css/style-min.css" rel="stylesheet" />
 	</head>
 	<body>
 		<header>
@@ -59,13 +61,21 @@
 		</nav>
     </div>
 		<!-- The main's purpose is to letprevious reader to share their opinion about the website. They will contact-us.html on how helpful the website was for them and how it help thm adjust to their new situation and such  -->
+    <div id="skip">
+        <p>Skip to</p>
+        <ul>
+          <li><a href="#marthe">Marthe Edme</a></li>
+          <li><a href="#darryl">Darryl Brooks</a></li>
+          <li><a href="#donovan">Donovan Mobley</a></li>
+        </ul>
+      </div>
 		<main>
 			<section>
 				<div>
 					<figure>
 						<div id="contact-div">
 							<div id="contact-content">
-								<a href="./media/marthe.pdf" download target="_blank"
+								<a href="./media/marthe.pdf" download target="_blank" id="marthe"
 									><img
 										src="./images/marthe.jpg"
 										alt="marthe"
@@ -103,7 +113,7 @@
 							<div style="width: 50%; margin-left: 10%">
 								<a
 									href="https://drive.google.com/file/d/1I5NITRNZOYTlhfnDwbM5rUitjeQRITpE/view?usp=sharing"
-									target="_blank"
+									target="_blank" id="darryl"
 									><img
 										src="./images/darryl.jpg"
 										alt="darryl"
@@ -132,7 +142,7 @@
 					<figure>
 						<div id="contact-div">
 							<div style="width: 50%">
-								<a href="media/Donovan_Mobley_Resume.pdf" download target="_blank"
+								<a href="media/Donovan_Mobley_Resume.pdf" download target="_blank" id="donovan"
 									><img
 										src="./images/donovan.jpg"
 										alt="donovan"
@@ -202,10 +212,18 @@
 			</section>
 		</main>
 		<footer>
-			Need more information? Email us at
-			<a href="SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or Call
-			800-000-MORE
-		</footer>
+        Need more information? Email us at
+         <a href="mailto:SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or
+         Call 800-000-MORE
+      <div class="copyright">
+      <p>&copy; Copyright 2021. All Rights Reserved.</p>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/FAMU1887/" target="_blank"><img src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/facebook-logo.png?raw=true" alt="Facebook logo"></a>
+        <a href="https://twitter.com/FAMU_1887?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/twitter-logo.png?raw=true" alt="Twitter Logo"></a>
+      </div>
+      <a href="mailto:lessons@strikeachord.net"></a>
+    </footer>
     <button class="darkmode-btn" onclick="darkMode()" id="dark">Turn Dark Mode On</button>
     <script src="scripts/script.js"></script>
 	</body>

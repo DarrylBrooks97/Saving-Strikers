@@ -7,12 +7,13 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+    <meta name="description" content="Students will find out how to save money and what to prioritize their funds on">
     <title>Finances</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Piazzolla&family=Taviraj:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles-min.css" rel="stylesheet">
     <link rel="icon" 
       type="image/png" 
       href="https://image.flaticon.com/icons/png/128/616/616487.png">
@@ -37,9 +38,17 @@
     </div>
     <!-- The main's purpose is to hold all of the main information about the webpage  -->
     <main>
+      <div id="skip">
+        <p>Skip to</p>
+        <ul>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#eating">Eating Out</a></li>
+          <li><a href="#decor">Home and Bedroom Decor</a></li>
+        </ul>
+      </div>
         <article>
           <section>
-            <di>
+            <div id="food">
             <img src="images/money.jpg" id="main-img"></img>
             </div>
             <h3>Food</h3>
@@ -57,7 +66,9 @@
         </article>
         <article>
           <section>
+            <div id="eating">
             <img src="images/takeout.jpg" id="main-img"></img>
+            </div>
             <h3>Eating Out</h3>
             <p>
               Avoid eating out if you are still looking for a job. Places you most
@@ -77,7 +88,9 @@
         </article>
         <article>
           <section>
+            <div id="decor">
             <img src="images/home.jpg" id="main-img"></img>
+            </div>
             <h3>Home and Bedroom Decor</h3>
             <table>
       <caption><h4>Buying what's necessary</h4></caption>
@@ -135,9 +148,17 @@
         </article>
     </main>
     <footer>
-      Need more information? Email us at
-      <a href="mailto:SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or
-      Call 800-000-MORE
+        Need more information? Email us at
+         <a href="mailto:SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or
+         Call 800-000-MORE
+      <div class="copyright">
+      <p>&copy; Copyright 2021. All Rights Reserved.</p>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/FAMU1887/" target="_blank"><img src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/facebook-logo.png?raw=true" alt="Facebook logo"></a>
+        <a href="https://twitter.com/FAMU_1887?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/twitter-logo.png?raw=true" alt="Twitter Logo"></a>
+      </div>
+      <a href="mailto:lessons@strikeachord.net"></a>
     </footer>
     <button class="darkmode-btn" onclick="darkMode()" id="dark">Turn Dark Mode On</button>
     <script src="scripts/script.js"></script>

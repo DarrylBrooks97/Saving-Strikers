@@ -7,6 +7,7 @@
 <html lang="en">
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+      <meta name="description" content="Students will have a resource for Frequently asked questions">
       <title>FAQs</title>
       <link
       href="https://fonts.googleapis.com/css2?family=Piazzolla&family=Taviraj:wght@300&display=swap"
@@ -16,7 +17,7 @@
     <link rel="icon" 
       type="image/png" 
       href="https://image.flaticon.com/icons/png/128/616/616487.png">
-      <link href="css/styles.css" rel="stylesheet">
+      <link href="css/styles-min.css" rel="stylesheet">
    </head>
    <body>
       <header>
@@ -37,6 +38,12 @@
     </div>
       <!-- The main's purpose is to hold all of the main information about the webpage  -->
       <main>
+        <div id="skip">
+        <p>Skip to</p>
+        <ul>
+          <li><a href="#location">Our Location</a></li>
+        </ul>
+      </div>
         <div class="faq-image">
          <img src="images/question.jpg"></img>
         </div>
@@ -95,10 +102,18 @@
             <aside>Need to connect with us?</aside>
       </main>
       <footer>
-         Need more information? Email us at
+        Need more information? Email us at
          <a href="mailto:SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or
          Call 800-000-MORE
-      </footer>
+      <div class="copyright">
+      <p>&copy; Copyright 2021. All Rights Reserved.</p>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/FAMU1887/" target="_blank"><img src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/facebook-logo.png?raw=true" alt="Facebook logo"></a>
+        <a href="https://twitter.com/FAMU_1887?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/twitter-logo.png?raw=true" alt="Twitter Logo"></a>
+      </div>
+      <a href="mailto:lessons@strikeachord.net"></a>
+    </footer>
       <button class="darkmode-btn" onclick="darkMode()" id="dark">Turn Dark Mode On</button>
     <script src="scripts/script.js"></script>
    </body>

@@ -52,6 +52,9 @@ a {
 	text-decoration: none;
 	color: darkcyan;
 }
+ul{
+  list-style: none;
+}
 iframe {
 	padding: 10px;
 	border: 3px solid red;
@@ -313,6 +316,10 @@ tr:nth-child(odd) {
 /* Darryl's Image Do not touch*/
 .darryl-image {
 	height: 100%;
+}
+.social img {
+    display: inline-block;
+    padding: 4%; 
 }
 /*Media Query for Mobile Viewport*/
 @media screen and (min-width: 550px), print {

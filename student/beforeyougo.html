@@ -7,12 +7,13 @@
 <html lang="en">
    <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
+    <meta name="description" content="Students will know what to prepare for before the decide on where to move">
     <title>Finances</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Piazzolla&family=Taviraj:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/styles-min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" 
       type="image/png" 
@@ -37,9 +38,19 @@
     </div>
       <!-- The main's purpose is to hold all of the main information about the webpage  -->
       <main>
+        <div id="skip">
+        <p>Skip to</p>
+        <ul>
+          <li><a href="#apartment">Apartment Picking</a></li>
+          <li><a href="#living">Living by your means</a></li>
+          <li><a href="#transport">Transportation</a></li>
+        </ul>
+      </div>
            <article>
              <section>
+               <div id="apartment">
                 <img src="images/apartment.jpg" id="main-img"></img>
+               </div>
                 <h4>Apartment Picking</h4>
                 <p>
                   Picking the ideal apartment is a daunting task. You should start
@@ -62,7 +73,9 @@
            </article>
            <article>
              <section>
+               <div id="living">
                 <img src="images/livingbyyourmeans.jpg" id="main-img" alt="living by your means.">
+               </div>
                 <h4>Living by your means</h4>
                 <p>
                   By living by your means you should know how to limit purchases and
@@ -72,7 +85,9 @@
            </article>
            <article>
              <section>
+               <div id="transport">
                 <img src="images/transportation.jpg" id="main-img"></img>
+               </div>
                 <h4>Tranportation</h4>
                 <p>
                   Before you decide to head out on your own you will need to have a plan
@@ -82,10 +97,18 @@
            </article>
       </main>
       <footer>
-         Need more information? Email us at
+        Need more information? Email us at
          <a href="mailto:SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or
          Call 800-000-MORE
-      </footer>
+      <div class="copyright">
+      <p>&copy; Copyright 2021. All Rights Reserved.</p>
+      </div>
+      <div class="social">
+        <a href="https://www.facebook.com/FAMU1887/" target="_blank"><img src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/facebook-logo.png?raw=true" alt="Facebook logo"></a>
+        <a href="https://twitter.com/FAMU_1887?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/twitter-logo.png?raw=true" alt="Twitter Logo"></a>
+      </div>
+      <a href="mailto:lessons@strikeachord.net"></a>
+    </footer>
       <button class="darkmode-btn" onclick="darkMode()" id="dark">Turn Dark Mode On</button>
     <script src="scripts/script.js"></script>
    </body>
