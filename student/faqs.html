@@ -7,38 +7,39 @@
 <html lang="en">
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8" />
-      <meta name="description" content="Students will have a resource for Frequently asked questions">
       <title>FAQs</title>
       <link
       href="https://fonts.googleapis.com/css2?family=Piazzolla&family=Taviraj:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
     <link rel="icon" 
       type="image/png" 
       href="https://image.flaticon.com/icons/png/128/616/616487.png">
-      <link href="css/styles-min.css" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
    </head>
    <body>
       <header>
          <h1>FAQs</h1>
       </header>
       <div class="hamburger">
-      <a href="javascript:void(0);" onclick="openMenu()"><i class="fa fa-bars" ></i></a>
-    </div>
-		<nav id="nav">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="finances.html">Finances</a></li>
-				<li><a href="beforeyougo.html">Before you Go</a></li>
-				<li><a href="faqs.html">FAQs</a></li>
-				<li><a href="contact-us.html">Contact Us</a></li>
-			</ul>
-		</nav>
-    </div>
+         <a href="javascript:void(0);"   onclick="openMenu()">Menu  <i class="fa fa-bars"></i></a>
+       </div>
+      <nav id="nav">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="finances.html">Finances</a></li>
+            <li><a href="beforeyougo.html">Before you go</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+         </ul>
+      </nav>
       <!-- The main's purpose is to hold all of the main information about the webpage  -->
       <main>
-        <div id="skip">
+         <div id="skip">
         <p>Skip to</p>
         <ul>
           <li><a href="#location">Our Location</a></li>
@@ -48,7 +49,7 @@
          <img src="images/question.jpg"></img>
         </div>
          <div class="column">
-            <div>
+            <div id="faqs">
                <h2>FAQs</h2>
                <ul>
                   <li>
@@ -57,7 +58,37 @@
                   </li>
                   <li>
                      <h4>How should I save money?</h4>
-                     <p>Eating out less, and practice responsible spending</p>
+                     <ol>
+                        <li>
+                           <p>The first step to start saving money is to figure out how much you spend.
+                           Keep track of all your expenses—that means every coffee, household item and cash tip.</p>
+                        </li>
+                        <li>
+                           <p>
+                           Once you have an idea of what you spend in a month, you can begin to organize your 
+                           recorded expenses into a workable budget.</p>
+                        </li>
+                        <li>
+                           <p>
+                           If your expenses are so high that you can’t save as much as you’d like, it might be time to cut back.</p>
+                        </li>
+                        <li>
+                           <p>
+                           One of the best ways to save money is to set a goal.</p>
+
+                        </li>
+                        <li>
+                           <p>After your expenses and income, your goals are likely to have the biggest impact on how you allocate your savings.</p>
+                        </li>
+                        <li>
+                           <p>
+                           Almost all banks offer automated transfers between your checking and savings accounts.</p>
+                        </li>
+                        <li>
+                           <p>
+                           Review your budget and check your progress every month. </p>
+                        </li>
+                     </ol>
                   </li>
                   <li>
                      <h4>How can I reduce the amount of times I eat out?</h3>
@@ -65,9 +96,8 @@
                   </li>
                </ul>
             </div>
-            <div>
+            <div id="helpful">
                <h2>Helpful Resources</h2>
-               <p>
                <ul>
                   <li>
                      <p>How to Save Money! Click <a href="https://turbo.intuit.com/blog/real-money-talk/how-to-save-money-1358/" target="_blank">Here</a></p>
@@ -82,17 +112,14 @@
                      <p>First time living on your own while disabled? Click <a href="https://www.helpguide.org/articles/healthy-living/living-well-with-a-disability.htm">here</a></p>
                   </li>
                </ul>
-               </p>
+               <h4>More Info</h4>
+                <audio controls>
+                  <source src="media/saving.mp4" type="audio/mp4">
+                  <source src="media/saving.webm" type="audio/webm">
+                   <p>Your browser does not support the video tag</p>
+                  <audio>
             </div>
          </div>
-         <div style="text-align: center;padding: 2em;margin-bottom: 2%;">
-            <video controls>
-              <source src="media/saving.mp4" type="video/mp4">
-              <source src="media/saving.ogg" type="video/ogg">
-              <track src="captionss.vtt" kind="captions" srclang="en" label="English">
-              <p>Your browser does not support the video tag</p>
-            </video>
-            </div>
           <div id="location">
         <h3>Our Location</h3>
         <p>We are located everywhere, but our main location is in Tallahassee.</p>
@@ -102,19 +129,31 @@
             <aside>Need to connect with us?</aside>
       </main>
       <footer>
-        Need more information? Email us at
-         <a href="mailto:SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or
-         Call 800-000-MORE
-      <div class="copyright">
-      <p>&copy; Copyright 2021. All Rights Reserved.</p>
-      </div>
-      <div class="social">
-        <a href="https://www.facebook.com/FAMU1887/" target="_blank"><img src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/facebook-logo.png?raw=true" alt="Facebook logo"></a>
-        <a href="https://twitter.com/FAMU_1887?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/twitter-logo.png?raw=true" alt="Twitter Logo"></a>
-      </div>
-      <a href="mailto:lessons@strikeachord.net"></a>
-    </footer>
-      <button class="darkmode-btn" onclick="darkMode()" id="dark">Turn Dark Mode On</button>
-    <script src="scripts/script.js"></script>
+			Need more information? Email us at
+			<a href="mailto:SavingStrikers@gmail.com">SavingStrikers@gmail.com</a> or
+			Call 800-000-MORE
+			<div class="copyright">
+				<p>&copy; Copyright 2021. All Rights Reserved.</p>
+			</div>
+			<div class="social">
+				<a href="https://www.facebook.com/FAMU1887/" target="_blank"
+					><img
+						src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/facebook-logo.png?raw=true"
+						alt="Facebook logo"
+				/></a>
+				<a
+					href="https://twitter.com/FAMU_1887?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+					target="_blank"
+					><img
+						src="https://github.com/DarrylBrooks97/Web-Development-Lab1/blob/main/music/images/twitter-logo.png?raw=true"
+						alt="Twitter Logo"
+				/></a>
+			</div>
+			<a href="mailto:lessons@strikeachord.net"></a>
+		</footer>
+		<script src="scripts/script.js"></script>
+		<button class="darkmode-btn" onclick="darkMode()" id="dark">
+			Activate Dark Mode
+		</button>
    </body>
 </html>

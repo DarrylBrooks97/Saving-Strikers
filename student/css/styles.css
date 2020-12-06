@@ -21,20 +21,23 @@ section,
 aside,
 figure,
 figcaption,
-iframe {
+iframe,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
 body {
-  background: linear-gradient(#e9ecef, #ced4da);
-  transition: background 1s linear;
+	background-color: #ced4da;
+	transition: background 1s linear;
+	max-width: 1440px;
+	margin: auto;
 }
-body.dark{
-  background: #67697C;
+body.dark {
+	background: #67697c;
 }
-.text-darkmode{
-  color: white;
+.text-darkmode {
+	color: white;
 }
 /* Home Page Styling*/
 .home-picture {
@@ -44,6 +47,17 @@ body.dark{
 	margin-left: auto;
 	margin-right: auto;
 }
+#home-img:hover {
+	animation: zoom 1s forwards;
+}
+@keyframes zoom {
+	0% {
+		transform: scale(0.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
 #home-caption {
 	width: 80%;
 	margin: 0 auto;
@@ -52,30 +66,27 @@ a {
 	text-decoration: none;
 	color: darkcyan;
 }
-ul{
-  list-style: none;
+ul {
+	list-style: none;
 }
 iframe {
 	padding: 10px;
 	border: 3px solid red;
 }
-#welcome {
-	text-align: center;
-}
-.darkmode-btn{
-  position:fixed;
-  bottom:50px;
-  right:50px;
-  width: auto;
-  height: auto;
-  border-radius: 20px;
+.darkmode-btn {
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	width: auto;
+	height: auto;
+	border-radius: 20px;
 }
 #contact-img {
 	width: 30%;
 	height: 100%;
 }
-#contact-img:hover{
-  animation: zoom 1s forwards;
+#contact-img:hover {
+	animation: zoom 1s forwards;
 }
 #contact-div {
 	display: flex;
@@ -85,28 +96,17 @@ iframe {
 #contact-content {
 	width: 50%;
 }
+#welcome {
+	text-align: center;
+}
 #welcome-text {
 	padding-bottom: 2%;
 }
 /* Style rule for images */
-img {
+img,
+video {
+	max-width: 100%;
 	display: block;
-}
-#home-img {
-	width: 60%;
-	height: 100%;
-	margin: 0 auto;
-}
-#home-img:hover{
-  animation: zoom 1s forwards;
-}
-@keyframes zoom{
-  0%{
-    transform: scale(0.5);
-  }
-  100%{
-    transform: scale(1.0);
-  }
 }
 /* Style rules for header content */
 header {
@@ -119,15 +119,16 @@ li p {
 }
 header h1 {
 	font-style: italic;
-	font-family: "Piazzolla", serif;
+	font-family: 'Piazzolla', serif;
 	text-shadow: 33px 3px 4px #b5b3cd;
 }
-/* Style rules for navigation area */
-.hamburger{
-  display: none;
+h2 {
+	color: darkcyan;
 }
+
+/* Style rules for navigation area */
 nav {
-	background-color: darkcyan;
+	background: linear-gradient(darkcyan, #176666);
 	display: flex;
 	justify-content: space-evenly;
 }
@@ -160,7 +161,6 @@ main {
 	padding: 3%;
 	overflow: auto;
 	font-family: Verdana, Arial, sans-serif;
-	/* text-align: center; */
 }
 #main-img {
 	height: 30%;
@@ -171,7 +171,7 @@ main {
 }
 main p {
 	font-size: 1.25em;
-	font-family: "Taviraj", serif;
+	font-family: 'Taviraj', serif;
 	border-radius: 3px 5px 2px 4px;
 }
 aside {
@@ -184,8 +184,8 @@ aside {
 }
 /* Other images may need this*/
 section img {
-	/* height: 30%;
-	width: 30%; */
+	/* height: 20.5em;
+	width: 20; */
 	max-width: 100%;
 	box-shadow: 12px 10px 0px #a5b4bb;
 }
@@ -218,6 +218,10 @@ section img {
 	margin-left: auto;
 	margin-right: auto;
 }
+/* figure {
+	width: 33%;
+	height: 50%;
+} */
 figure a {
 	text-decoration: none;
 }
@@ -230,8 +234,10 @@ figure a:hover {
 }
 figcaption {
 	margin-top: 3%;
-	/* width: auto;
-	height: auto; */
+	width: auto;
+	height: auto;
+	font-size: 1.1em;
+	padding-bottom: 20px;
 	/* text-align: center; */
 }
 /* Desktop Viewport: Style rules for form elements */
@@ -244,38 +250,45 @@ fieldset {
 	width: 70%;
 	margin: 0 auto;
 }
-
 fieldset input {
 	width: 22%;
 	height: 50%;
+	margin: 0 auto;
+}
+fieldset label {
 	margin: 0 auto;
 }
 form {
 	width: auto;
 	text-align: center;
 }
-embed {
-	width: 100%;
-	height: 100%;
-}
-#submit {
+form #submit {
 	margin: 0 auto;
 	display: block;
-	padding: 0.5%;
-	background-color: darkcyan;
+	padding: 2%;
+	background: darkcyan;
 	color: #f6eee4;
 	font-size: 1.25em;
 	border-radius: 10px;
-	margin-top: 1%;
+}
+.form-grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px;
+}
+embed {
+	width: 100%;
+	height: 100%;
 }
 /* Style rules for footer content */
 footer {
 	text-align: center;
 	clear: left;
 	padding: 1% 0% 1% 0%;
+	background: linear-gradient(darkcyan, #176666);
 }
 footer a {
-	color: darkcyan;
+	color: #fff;
 	text-decoration: none;
 }
 label {
@@ -284,11 +297,24 @@ label {
 }
 .creators-div {
 	display: grid;
-	grid-template-rows: auto auto auto;
+	grid-gap: 0px;
+	text-align: center;
+	padding-bottom: 3px;
 }
 
 .creators-div figure {
-	grid-row: 1 / span 1;
+	grid-row: 1 / span 3;
+	margin-left: 20%;
+	height: 18em;
+	width: 18.5em;
+}
+.creators-images {
+	height: 18em;
+	width: 18.5em;
+}
+.creaters-img {
+	height: 0.5em;
+	width: 0.5em;
 }
 
 #location {
@@ -296,14 +322,15 @@ label {
 }
 /* Table Styles*/
 table {
-	border: 1px solid #2a1f14;
+	border: none;
 	border-collapse: collapse;
 	margin: 0 auto;
 }
 th,
 td {
-	border: 1px solid #2a1f14;
+	border: none;
 	padding: 1%;
+	text-align: center;
 }
 th {
 	background-color: #2a1f14;
@@ -311,15 +338,22 @@ th {
 	font-size: 1.15em;
 }
 tr:nth-child(odd) {
-	background-color: darkcyan;
-}
-/* Darryl's Image Do not touch*/
-.darryl-image {
-	height: 100%;
+	background: linear-gradient(darkcyan, #176666);
 }
 .social img {
-    display: inline-block;
-    padding: 4%; 
+	display: inline-block;
+	padding: 1%;
+}
+/* Marthe's Image*/
+.marthe-image {
+	height: 100%;
+	width: 50%;
+}
+.btn {
+	grid-column: 1 / span 2;
+}
+.hamburger {
+	display: none;
 }
 /*Media Query for Mobile Viewport*/
 @media screen and (min-width: 550px), print {
@@ -339,7 +373,7 @@ tr:nth-child(odd) {
 		display: none;
 	}
 	/*Tablet Viewport: Style rules for nav area*/
-  
+
 	nav li {
 		border-top: none;
 		display: inline-block;
@@ -355,29 +389,53 @@ tr:nth-child(odd) {
 }
 /* Media Query for Tablet Device*/
 @media screen and (max-width: 800px), print {
-  .hamburger{
-  display: block;
-}
+	.hamburger {
+		display: block;
+	}
 	nav li {
-    display: flex;
+		display: flex;
 		flex-direction: column;
 	}
-  #nav{
-    display: none;
-  }
+	#nav {
+		display: none;
+	}
 	.creators-div {
 		display: block;
 		margin-top: 15px;
 		margin-bottom: 15px;
 	}
 	.creators-div figure {
-		margin-left: auto;
-		margin-right: auto;
+		margin: 0 auto 80% auto;
 		display: block;
 	}
-	@keyframes apperance{
-
-  }
+	.column {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	iframe {
+		height: auto;
+		width: auto;
+	}
+	#helpful p,
+	#faqs p {
+		margin: 0 auto;
+	}
+	#contact-div {
+		display: block;
+		padding: 0;
+	}
+	#embed-div {
+		margin: 0 auto;
+	}
+	#contact-content {
+		margin: 0 auto;
+		width: auto;
+	}
+	embed {
+		width: auto;
+		height: auto;
+	}
 }
 /*Media Query for Desktop Viewport*/
 @media screen and (min-width: 1000px), print {
@@ -387,9 +445,9 @@ tr:nth-child(odd) {
 	aside {
 		grid-column: 1 / span 4;
 	}
-  nav{
-    display: block;
-  }
+	nav {
+		display: block;
+	}
 	/*Desktop Viewport: Style rules for nav area*/
 	nav li {
 		font-size: 1.5em;
